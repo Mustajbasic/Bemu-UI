@@ -28,19 +28,20 @@
                         <input type="button" class="button full-width white" value="Profile">
                         <input type="button" class="button full-width white" value="Settings">
                         <input type="button" class="button full-width white" value="Logout">
+                        <input type="button" class="button full-width white" onclick="globalBemu.toggleSideNav()" value="Close Side Nav">
                     </div>
                 </div>
             </div>
         </div>
     <div class="navigation-large show-on-large">
         <div class="left">
-            <div class="nav-item light">Hello</div>
+            <a href="#" class="nav-item light">Home</a>
             <div class="nav-item light dropdown noselect" id="test-dropdown" onclick="globalBemu.toggleDropdown('test-dropdown')">Dropdown
                 <ul class="dropdown-list hide">
                     <li class="arrow-up"> <i class="material-icons">arrow_drop_up</i> </li>
-                    <li class="dropdown-element">Home</li>
-                    <li class="dropdown-element">Web</li>
-                    <li class="dropdown-element">Alle</li>
+                    <li class="dropdown-element">Element 1</li>
+                    <li class="dropdown-element">Element 2</li>
+                    <li class="dropdown-element">Element 3</li>
                 </ul>
             </div>
         </div>
@@ -59,33 +60,36 @@
     </div>
     <div class="width-wrapper navbar-is-fixed-with-gap">
         <div class="row">
-            <div class="six-large six-medium six-small col">
-                <div class="input-field">
-                    <input type="text" placeholder="john.doe" class="input"> </div>
+            <div class="col full-small full-medium full-large">
+                <h1 class="">List</h1>
             </div>
-            <div class="six-large six-medium six-small col">
-                <input type="button" class="button full-width" value="Test button"> </div>
         </div>
         <div class="row">
-            <div class="col six-large eight-medium full-small">
+            <div class="col six-large six-medium full-small">
                 <ul class="list hoverable">
-                    <li class="list-head">List of names</li>
-                    <li class="list-item">John</li>
-                    <li class="list-item">Reachel</li>
-                    <li class="list-item">Alex</li>
-                    <li class="list-item">Mai</li>
-                    <li class="list-item">D'alamander</li>
+                    <li class="list-head">List with highlight</li>
+                    <li class="list-item">List item 1</li>
+                    <li class="list-item">List item 2</li>
+                    <li class="list-item">List item 3</li>
+                    <li class="list-item">List item 4</li>
+                    <li class="list-item">List item 5</li>
                 </ul>
             </div>
-            <div class="col six-large four-medium full-small">
-                <input type="button" class="button primary full-width" value="Primary button">
-                <input type="button" class="button danger full-width" value="Danger button">
-                <input type="button" class="button warning full-width" value="Warning button">
-                <input type="button" class="button success full-width" value="Success button"> </div>
+            <div class="col six-large six-medium full-small">
+                <ul class="list">
+                    <li class="list-head">List without highlight</li>
+                    <li class="list-item">List item 1</li>
+                    <li class="list-item">List item 2</li>
+                    <li class="list-item">List item 3</li>
+                    <li class="list-item">List item 4</li>
+                    <li class="list-item">List item 5</li>
+                </ul>
+            </div>
         </div>
         <div class="row">
             <div class="col full-small full-medium full-large">
                 <h1 class="">The Grid</h1>
+            </div>
         </div>
         <div class="row">
             <div class="col full-large full-medium full-small ">
@@ -232,33 +236,89 @@
         </div>
         <div class="row">
             <div class="col full-small full-medium full-large">
-                <h1>This is a heading 1 paragraph</h1> </div>
+                <h1>Typography (Oh BTW, this is a heading 1)</h1> </div>
         </div>
         <div class="row">
             <div class="col full-small full-medium full-large">
-                <h2>This is a heading 2 paragraph</h2> </div>
+                <h2>This is a heading 2</h2> </div>
         </div>
         <div class="row">
             <div class="col full-small full-medium full-large">
-                <h3>This is a heading 3 paragraph</h3> </div>
+                <h3>This is a heading 3</h3> </div>
         </div>
         <div class="row">
             <div class="col full-small full-medium full-large">
-                <h4>This is a heading 4 paragraph</h4> </div>
+                <h4>This is a heading 4</h4> </div>
         </div>
         <div class="row">
             <div class="col full-small full-medium full-large">
-                <h5>This is a heading 5 paragraph</h5> </div>
+                <h5>This is a heading 5</h5> </div>
         </div>
         <div class="row">
             <div class="col full-small full-medium full-large">
-                <h6>This is a heading 6 paragraph</h6> </div>
+                <h6>This is a heading 6</h6> </div>
+        </div>
+        <div class="row bottom-gap">
+            <div class="col full-large full-medium full-small justify">
+                Out in the woods stood a nice little Fir-tree. The place he had was a very good one; the sun shone on him; as to fresh air, 
+                there was enough of that, and round him grew many large-sized comrades, pines as well as firs. But the little Fir wanted so very much to be a grown-up tree.
+            </div>
+        </div>
+        <div class="row bottom-gap">
+            <div class="col full-large full-medium full-small justify">
+                He did not think of the warm sun and of the fresh air; he did not care for the little cottage children that ran about and prattled when they 
+                were in the woods looking for wild strawberries. The children often came with a whole pitcher full of berries, or a long row of them threaded 
+                on a straw, and sat down near the young tree and said, "Oh, how pretty he is! what a nice little fir!" 
+                But this was what the Tree could not bear to hear.
+            </div>
+        </div>
+        <div class="row bottom-gap">
+            <div class="col full-small six-medium six-large justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae harum, quod dolor autem libero nisi tempora. Velit est, blanditiis! Architecto tenetur sequi, eligendi deserunt non eos suscipit quaerat ipsum. Magni.</div>
+            <div class="col full-small six-medium six-large justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae harum, quod dolor autem libero nisi tempora. Velit est, blanditiis! Architecto tenetur sequi, eligendi deserunt non eos suscipit quaerat ipsum. Magni.</div>
         </div>
         <div class="row">
-            <div class="col full-small six-medium six-large jutify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae harum, quod dolor autem libero nisi tempora. Velit est, blanditiis! Architecto tenetur sequi, eligendi deserunt non eos suscipit quaerat ipsum. Magni.</div>
-            <div class="col full-small six-medium six-large jutify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae harum, quod dolor autem libero nisi tempora. Velit est, blanditiis! Architecto tenetur sequi, eligendi deserunt non eos suscipit quaerat ipsum. Magni.</div>
+            <div class="col full-small full-medium full-large">
+                <h1>Don't push my buttons</h1> </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col four-large three-medium full-small"></div>
+            <div class="col four-large six-medium full-small">
+                <input type="button" class="button primary full-width" value="Primary button">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col four-large three-medium full-small"></div>
+            <div class="col four-large six-medium full-small">
+                <input type="button" class="button danger full-width" value="Danger button">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col four-large three-medium full-small"></div>
+            <div class="col four-large six-medium full-small">
+                <input type="button" class="button warning full-width" value="Warning button">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col four-large three-medium full-small"></div>
+            <div class="col four-large six-medium full-small">
+                <input type="button" class="button success full-width" value="Success button">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h1>Input</h1> </div>
+        </div>
+        <div class="row">
+            <div class="six-large six-medium six-small col">
+                <div class="input-field">
+                    <input type="text" placeholder="Input fields and demo will be added" class="input">
+                </div>
+            </div>
+            <div class="six-large six-medium six-small col">
+                <input type="button" class="button full-width" value="Test button">
+            </div>
+       </div>
+       </div> 
     </div>
     <div class="show-on-too-small">
         <h3>This site is not made for screens with resolution smaller than 320px widthwise. We are sorry.</h3>
