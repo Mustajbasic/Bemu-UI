@@ -1,6 +1,7 @@
 /*
 |  Author: Belmin Mustajbasic
 |  E-mail: belmin.mustajbasic@serapion-it.com
+|  Github: https://github.com/Mustajbasic/Bemu-UI
 */
 
 
@@ -18,20 +19,28 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0 0 10px 0;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
 img {
     border-style: none;
 }
 
-a {
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
     background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+    
 }
 
 
-/* -- Random -- */
+/* -- Unclassified -- */
 
-.jutify {
+.justify {
     text-align: justify;
 }
 
@@ -43,24 +52,36 @@ a {
     display: none;
 }
 
+.bottom-gap {
+    margin-bottom: 10px;
+}
+
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
 
 
 /* -- Grid -- */
-.width-wrapper  {
+
+.width-wrapper {
     width: 100%;
     max-width: 963px;
     min-width: 320px;
     margin: 0 auto;
 }
+
 .row {
     width: 100%;
 }
@@ -72,11 +93,14 @@ a {
 }
 
 .col {
+    min-height: 1px;
     float: left;
     padding: 0 10px;
 }
 
+
 /* -- LARGE SCREENS -- */
+
 @media only screen and (min-width: 751px) {
     .hide-on-large {
         display: none;
@@ -127,7 +151,10 @@ a {
         width: calc(100% - 20px);
     }
 }
+
+
 /* -- MEDIUM SCREENS -- */
+
 @media only screen and (min-width: 551px) and (max-width: 750px) {
     .hide-on-med {
         display: none;
@@ -178,7 +205,10 @@ a {
         width: calc(100% - 20px);
     }
 }
+
+
 /* -- SMALL SCREENS -- */
+
 @media only screen and (min-width: 320px) and (max-width: 550px) {
     .hide-on-small {
         display: none;
@@ -229,13 +259,17 @@ a {
         width: calc(100% - 20px);
     }
 }
+
+
 /* -- SMALL SCREENS -- */
+
 @media only screen and (max-width: 319px) {
     .hide-on-too-small {
         display: none;
     }
-    
 }
+
+
 /* -- Input field -- */
 
 input[type=text].input,
@@ -398,6 +432,7 @@ ul.list .list-item {
 .navbar-is-fixed {
     margin-top: 50px !important;
 }
+
 .navbar-is-fixed-with-gap {
     margin-top: 75px !important;
 }
@@ -427,6 +462,7 @@ ul.list .list-item {
     padding: 9px;
     text-align: center;
 }
+
 .navbar .sidenav-toggle {
     border-radius: 3px;
     cursor: pointer;
@@ -436,19 +472,24 @@ ul.list .list-item {
     text-align: center;
     height: 24px;
 }
-.navbar .nav-item.light, .navbar .sidenav-toggle.light {
+
+.navbar .nav-item.light,
+.navbar .sidenav-toggle.light {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.navbar .nav-item.dark, .navbar .sidenav-toggle.dark {
+.navbar .nav-item.dark,
+.navbar .sidenav-toggle.dark {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar .nav-item.light:hover, .navbar .sidenav-toggle.light:hover {
+.navbar .nav-item.light:hover,
+.navbar .sidenav-toggle.light:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.navbar .nav-item.dark:hover, .navbar .sidenav-toggle.dark:hover {
+.navbar .nav-item.dark:hover,
+.navbar .sidenav-toggle.dark:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -474,6 +515,7 @@ ul.list .list-item {
     padding: 8px 15px;
     text-align: left;
 }
+
 .dropdown-list > .arrow-up {
     padding: 2px 15px;
     text-align: center;
@@ -483,7 +525,8 @@ ul.list .list-item {
     background-color: #F0F0F0;
 }
 
- /* -- Sidenav -- */
+
+/* -- Sidenav -- */
 
 .sidenav {
     position: fixed;
@@ -505,17 +548,18 @@ ul.list .list-item {
     height: 150px;
     background-color: #FFFFFF;
 }
+
 .sidenav-logo {
     width: 90px;
     height: 90px;
     margin: 30px 10px;
     display: inline-block;
 }
+
 .sidenav-header-info {
     float: right;
     width: 200px;
     margin-top: 30px;
-
 }
 
 .sidenav-header-info > h3 {
@@ -537,11 +581,11 @@ ul.list .list-item {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     transition: all 1s linear;
     z-index: 900;
 }
 
 .courtain-hidden {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
