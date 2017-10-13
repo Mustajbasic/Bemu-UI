@@ -1,0 +1,96 @@
+.white-text { color: #FFFFFF !important ; }
+.black-text { color: #000000 !important ; }
+
+.red { background-color: #f44336 !important ; }
+.red.darker-1 { background-color: #d32f2f !important ; }
+.red.darker-2 { background-color: #b71c1c !important ; }
+.red.lighter-1 { background-color: #e57373 !important ; }
+.red.lighter-2 { background-color: #ffcdd2 !important ; }
+
+.pink { background-color: #e91e63 !important ; }
+.pink.darker-1 { background-color: #c2185b !important ; }
+.pink.darker-2 { background-color: #880e4f !important ; }
+.pink.lighter-1 { background-color: #f06292 !important ; }
+.pink.lighter-2 { background-color: #f8bbd0 !important ; }
+
+.purple { background-color: #9c27b0 !important ; }
+.purple.darker-1 { background-color: #7b1fa2 !important ; }
+.purple.darker-2 { background-color: #4a148c !important ; }
+.purple.lighter-1 { background-color: #ba68c8 !important ; }
+.purple.lighter-2 { background-color: #e1bee7 !important ; }
+
+.blue { background-color: #2196f3 !important ; }
+.blue.darker-1 { background-color: #1976d2 !important ; }
+.blue.darker-2 { background-color: #1565c0 !important ; }
+.blue.lighter-1 { background-color: #64b5f6 !important ; }
+.blue.lighter-2 { background-color: #bbdefb !important ; }
+
+.cyan { background-color: #00bcd4 !important ; }
+.cyan.darker-1 { background-color: #0097a7 !important ; }
+.cyan.darker-2 { background-color: #00838f !important ; }
+.cyan.lighter-1 { background-color: #4dd0e1 !important ; }
+.cyan.lighter-2 { background-color: #b2ebf2 !important ; }
+
+.teal { background-color: #009688  !important ; }
+.teal.darker-1 { background-color: #00796b !important ; }
+.teal.darker-2 { background-color: #004d40 !important ; }
+.teal.lighter-1 { background-color: #4db6ac !important ; }
+.teal.lighter-2 { background-color: #b2dfdb !important ; }
+
+.green { background-color: #4caf50  !important ; }
+.green.darker-1 { background-color: #388e3c  !important ; }
+.green.darker-2 { background-color: #1b5e20  !important ; }
+.green.lighter-1 { background-color: #81c784  !important ; }
+.green.lighter-2 { background-color: #c8e6c9  !important ; }
+
+.lime-green { background-color: #8bc34a   !important ; }
+.lime-green.darker-1 { background-color: #689f38  !important ; }
+.lime-green.darker-2 { background-color: #33691e  !important ; }
+.lime-green.lighter-1 { background-color: #aed581  !important ; }
+.lime-green.lighter-2 { background-color: #dcedc8  !important ; }
+
+.yellow { background-color: #ffeb3b   !important ; }
+.yellow.darker-1 { background-color: #fbc02d  !important ; }
+.yellow.darker-2 { background-color: #f57f17  !important ; }
+.yellow.lighter-1 { background-color: #fff176  !important ; }
+.yellow.lighter-2 { background-color: #fff9c4  !important ; }
+
+.amber { background-color: #ffc107   !important ; }
+.amber.darker-1 { background-color: #ffa000  !important ; }
+.amber.darker-2 { background-color: #ff6f00  !important ; }
+.amber.lighter-1 { background-color: #ffd54f  !important ; }
+.amber.lighter-2 { background-color: #ffecb3  !important ; }
+
+.orange { background-color: #ff9800   !important ; }
+.orange.darker-1 { background-color: #f57c00  !important ; }
+.orange.darker-2 { background-color: #e65100  !important ; }
+.orange.lighter-1 { background-color: #ffb74d  !important ; }
+.orange.lighter-2 { background-color: #ffe0b2  !important ; }
+
+.deep-orange { background-color: #ff5722   !important ; }
+.deep-orange.darker-1 { background-color: #e64a19  !important ; }
+.deep-orange.darker-2 { background-color: #bf360c  !important ; }
+.deep-orange.lighter-1 { background-color: #ff8a65  !important ; }
+.deep-orange.lighter-2 { background-color: #ffccbc  !important ; }
+
+.brown { background-color: #795548   !important ; }
+.brown.darker-1 { background-color: #5d4037  !important ; }
+.brown.darker-2 { background-color: #3e2723  !important ; }
+.brown.lighter-1 { background-color: #a1887f  !important ; }
+.brown.lighter-2 { background-color: #d7ccc8  !important ; }
+
+.grey { background-color: #9e9e9e   !important ; }
+.grey.darker-1 { background-color: #616161  !important ; }
+.grey.darker-2 { background-color: #212121  !important ; }
+.grey.lighter-1 { background-color: #e0e0e0  !important ; }
+.grey.lighter-2 { background-color: #f5f5f5  !important ; }
+
+.blue-grey { background-color: #607d8b   !important ; }
+.blue-grey.darker-1 { background-color: #455a64  !important ; }
+.blue-grey.darker-2 { background-color: #263238  !important ; }
+.blue-grey.lighter-1 { background-color: #90a4ae  !important ; }
+.blue-grey.lighter-2 { background-color: #cfd8dc  !important ; }
+
+.black { background-color: #000000 !important ; }
+.white { background-color: #FFFFFF !important ; }
+.transparent { background-color: transparent !important ; }

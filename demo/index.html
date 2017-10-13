@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bemu Demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../src/bemu.css">
+    <link rel="stylesheet" href="../src/bemu-colors.css">
+    <link rel="stylesheet" href="demo.css"> </head>
+
+<body>
+   <div class="hide-on-too-small">
+    <div class="navbar fixed blue-grey darker-1 white-text" style="">
+        <div class="hide-on-large">
+            <div class="sidenav-toggle light right" onclick="globalBemu.toggleSideNav()"> <i class="material-icons noselect">menu</i> </div>
+            <div class="sidenav-courtain courtain-hidden hide" id="sidenav-courtain"></div>
+               <div class="sidenav sidenav-hidden" id="main-side-nav">
+                <div class="sidenav-header darker-2 blue-grey"> <img src="logo.png" alt="" class="sidenav-logo">
+                    <div class="sidenav-header-info white-text">
+                        <h3>@Mustajbasic</h3>
+                        <h5>Belmin Mustajbašić</h5> </div>
+                    <div class="sidenav-content">
+                        <input type="button" class="button full-width white" value="Home">
+                        <input type="button" class="button full-width white" value="About">
+                        <input type="button" class="button full-width white" value="Profile">
+                        <input type="button" class="button full-width white" value="Settings">
+                        <input type="button" class="button full-width white" value="Logout">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="navigation-large show-on-large">
+        <div class="left">
+            <div class="nav-item light">Hello</div>
+            <div class="nav-item light dropdown noselect" id="test-dropdown" onclick="globalBemu.toggleDropdown('test-dropdown')">Dropdown
+                <ul class="dropdown-list hide">
+                    <li class="arrow-up"> <i class="material-icons">arrow_drop_up</i> </li>
+                    <li class="dropdown-element">Home</li>
+                    <li class="dropdown-element">Web</li>
+                    <li class="dropdown-element">Alle</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="nav-item dark dropdown noselect" id="dark-dropdown" onclick="globalBemu.toggleDropdown('dark-dropdown')">Profile
+                <ul class="dropdown-list hide">
+                    <li class="arrow-up"> <i class="material-icons">arrow_drop_up</i> </li>
+                    <li class="dropdown-element">My Prodile</li>
+                    <li class="dropdown-element">Edit profile</li>
+                    <li class="dropdown-element">Delete profile</li>
+                </ul>
+            </div>
+            <div class="nav-item dark">Logout</div>
+        </div>
+    </div>
+    </div>
+    <div class="width-wrapper navbar-is-fixed-with-gap">
+        <div class="row">
+            <div class="six-large six-medium six-small col">
+                <div class="input-field">
+                    <input type="text" placeholder="john.doe" class="input"> </div>
+            </div>
+            <div class="six-large six-medium six-small col">
+                <input type="button" class="button full-width" value="Test button"> </div>
+        </div>
+        <div class="row">
+            <div class="col six-large eight-medium full-small">
+                <ul class="list hoverable">
+                    <li class="list-head">List of names</li>
+                    <li class="list-item">John</li>
+                    <li class="list-item">Reachel</li>
+                    <li class="list-item">Alex</li>
+                    <li class="list-item">Mai</li>
+                    <li class="list-item">D'alamander</li>
+                </ul>
+            </div>
+            <div class="col six-large four-medium full-small">
+                <input type="button" class="button primary full-width" value="Primary button">
+                <input type="button" class="button danger full-width" value="Danger button">
+                <input type="button" class="button warning full-width" value="Warning button">
+                <input type="button" class="button success full-width" value="Success button"> </div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h1 class="">The Grid</h1>
+        </div>
+        <div class="row">
+            <div class="col full-large full-medium full-small ">
+                <input type="button" class="button full-width" value="12"> </div>
+        </div>
+        <div class="row">
+            <div class="col one-large two-medium full-small ">
+                <input type="button" class="button full-width" value="1"> </div>
+            <div class="col eleven-large ten-medium full-small ">
+                <input type="button" class="button full-width" value="11"> </div>
+        </div>
+        <div class="row">
+            <div class="col two-large two-medium full-small ">
+                <input type="button" class="button full-width" value="2"> </div>
+            <div class="col ten-large ten-medium full-small ">
+                <input type="button" class="button full-width" value="10"> </div>
+        </div>
+        <div class="row">
+            <div class="col three-large four-medium full-small ">
+                <input type="button" class="button full-width" value="3"> </div>
+            <div class="col nine-large eight-medium full-small ">
+                <input type="button" class="button full-width" value="9"> </div>
+        </div>
+        <div class="row">
+            <div class="col four-large four-medium full-small ">
+                <input type="button" class="button full-width" value="4"> </div>
+            <div class="col eight-large eight-medium full-small ">
+                <input type="button" class="button full-width" value="8"> </div>
+        </div>
+        <div class="row">
+            <div class="col five-large six-medium full-small ">
+                <input type="button" class="button full-width" value="5"> </div>
+            <div class="col seven-large six-medium full-small ">
+                <input type="button" class="button full-width" value="7"> </div>
+        </div>
+        <div class="row">
+            <div class="col six-large six-medium full-small ">
+                <input type="button" class="button full-width" value="6"> </div>
+            <div class="col six-large six-medium full-small ">
+                <input type="button" class="button full-width" value="6"> </div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h1 class="">All the COLORS!</h1>
+                <h3 class="">(Inspect a color box to get it's class)</h3> </div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box darker-2 red"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 pink"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 purple"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 blue"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 cyan"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 teal"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 green"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 lime-green"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 yellow"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 amber"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 orange"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 deep-orange"></div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box darker-1 red"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 pink"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 purple"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 blue"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 cyan"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 teal"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 green"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 lime-green"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 yellow"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 amber"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 orange"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 deep-orange"></div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box red"></div>
+            <div class="col one-large one-medium one-small color-box pink"></div>
+            <div class="col one-large one-medium one-small color-box purple"></div>
+            <div class="col one-large one-medium one-small color-box blue"></div>
+            <div class="col one-large one-medium one-small color-box cyan"></div>
+            <div class="col one-large one-medium one-small color-box teal"></div>
+            <div class="col one-large one-medium one-small color-box green"></div>
+            <div class="col one-large one-medium one-small color-box lime-green"></div>
+            <div class="col one-large one-medium one-small color-box yellow"></div>
+            <div class="col one-large one-medium one-small color-box amber"></div>
+            <div class="col one-large one-medium one-small color-box orange"></div>
+            <div class="col one-large one-medium one-small color-box deep-orange"></div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box lighter-1 red"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 pink"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 purple"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 blue"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 cyan"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 teal"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 green"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 lime-green"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 yellow"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 amber"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 orange"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 deep-orange"></div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box lighter-2 red"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 pink"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 purple"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 blue"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 cyan"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 teal"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 green"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 lime-green"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 yellow"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 amber"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 orange"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 deep-orange"></div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box darker-2 brown"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 grey"></div>
+            <div class="col one-large one-medium one-small color-box darker-2 blue-grey"></div>
+            <div class="col one-large one-medium one-small color-box black"></div>
+            <div class="col one-large one-medium one-small color-box white">White</div>
+            <div class="col two-large one-medium two-small color-box transparent">Transparent</div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box darker-1 brown"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 grey"></div>
+            <div class="col one-large one-medium one-small color-box darker-1 blue-grey"></div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box brown"></div>
+            <div class="col one-large one-medium one-small color-box grey"></div>
+            <div class="col one-large one-medium one-small color-box blue-grey"></div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box lighter-1 brown"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 grey"></div>
+            <div class="col one-large one-medium one-small color-box lighter-1 blue-grey"></div>
+        </div>
+        <div class="row">
+            <div class="col one-large one-medium one-small color-box lighter-2 brown"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 grey"></div>
+            <div class="col one-large one-medium one-small color-box lighter-2 blue-grey"></div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h1>This is a heading 1 paragraph</h1> </div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h2>This is a heading 2 paragraph</h2> </div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h3>This is a heading 3 paragraph</h3> </div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h4>This is a heading 4 paragraph</h4> </div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h5>This is a heading 5 paragraph</h5> </div>
+        </div>
+        <div class="row">
+            <div class="col full-small full-medium full-large">
+                <h6>This is a heading 6 paragraph</h6> </div>
+        </div>
+        <div class="row">
+            <div class="col full-small six-medium six-large jutify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae harum, quod dolor autem libero nisi tempora. Velit est, blanditiis! Architecto tenetur sequi, eligendi deserunt non eos suscipit quaerat ipsum. Magni.</div>
+            <div class="col full-small six-medium six-large jutify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae harum, quod dolor autem libero nisi tempora. Velit est, blanditiis! Architecto tenetur sequi, eligendi deserunt non eos suscipit quaerat ipsum. Magni.</div>
+        </div>
+    </div>
+    </div>
+    <div class="show-on-too-small">
+        <h3>This site is not made for screens with resolution smaller than 320px widthwise. We are sorry.</h3>
+    </div>
+</body>
+
+</html>
+<script src="../src/bemu.js"></script>
+<script src="demo.js"></script>
