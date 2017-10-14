@@ -10,3 +10,4 @@ globalBemu.addSideNavigation("main-side-nav", "sidenav-courtain");
 globalBemu.addDialog("demo-dialog", "dialog-courtain");
 globalBemu.addDialog("first-dialog", "dialog-courtain");
 globalBemu.addDialog("second-dialog", "dialog-courtain");
+globalBemu.addDialog("long-dialog", "dialog-courtain");
