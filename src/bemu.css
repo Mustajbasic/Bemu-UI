@@ -658,6 +658,8 @@ ul.list .list-item {
     padding: 20px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    max-height: 550px;
+    overflow-y: auto;
     font-size: 16px;
     overflow-y: auto;
 }
