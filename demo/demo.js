@@ -7,4 +7,6 @@ globalBemu.addDropdown("dark-dropdown");
 
 globalBemu.addSideNavigation("main-side-nav", "sidenav-courtain");
 
+globalBemu.addDialog("first-dialog","dialog-courtain");
+
 

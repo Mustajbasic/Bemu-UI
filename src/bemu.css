@@ -589,3 +589,64 @@ ul.list .list-item {
 .courtain-hidden {
     background-color: rgba(0, 0, 0, 0);
 }
+
+/* -- Dialog -- */
+
+.popup-dialog {
+    position: fixed;
+    width: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.dialog-hidden {
+    left: -755px;
+}
+.narrow.dialog-hidden {
+    left: -455px;
+}
+.wide.dialog-hidden {
+    left: -1030px;
+}
+.popup-dialog.narrow {
+    width: 450px;
+}
+.popup-dialog.wide {
+    width: 1025px;
+}
+.dialog-header {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: bisque;
+}
+.dialog-title {
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+}
+.close-dialog {
+    float: right;
+    font-size: 21px;
+    padding: 10px;
+    margin: 10px;
+    height: 21px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.close-dialog:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+.close-dialog i {
+        font-size: 21px;
+
+}
+
+.dialog-content {
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

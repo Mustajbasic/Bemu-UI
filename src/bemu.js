@@ -1,6 +1,7 @@
 function Bemu() {
     let dropdownList = [];
-    let dropdownListOnlyIds = []
+    let dialogList = [];
+    let dropdownListOnlyIds = [];
     let sidenav = {};
     let public = {};
     let numberOfShownDropdowns = 0;
@@ -17,6 +18,19 @@ function Bemu() {
     }
     public.toggleSideNav = function() {
         sidenav.toggle();
+    }
+    public.addDialog= function (id,courtain) {
+        dialogList.push(BemuDialog(id, courtain));
+        console.log(dialogList);
+    }
+    public.toggleDialog = function (id) {
+        console.log(id);
+        for(let i = 0 ; i < dialogList.length ; i++) {
+            if(dialogList[i].getId() == id) {
+                console.log("Našao")
+                dialogList[i].toggle();
+            }
+        }
     }
     public.addDropdown = function (id) {
         dropdownList.push(BemuDropdown(id));
@@ -110,5 +124,32 @@ function BemuSideNavigation(idParam, courtainParam) {
         
     }
     
+    return public;
+}
+
+function BemuDialog (idParam, courtainParam) {
+    let id = idParam;
+    let courtainId = courtainParam;
+    let dialog = document.getElementById(id);
+    let courtain = document.getElementById(courtainId);
+    let isOpen = false;
+    
+    let public = {};
+    public.getId = function(){ return id; }
+    public.getCourtainId = function(){ return courtainId; }
+    public.toggle = function() {
+        dialog.classList.toggle('dialog-hidden');
+        
+        if(isOpen) {
+            courtain.classList.toggle('courtain-hidden');
+            setTimeout(courtain.classList.toggle('hide'),100)
+        }
+        else {
+            courtain.classList.toggle('hide');
+            courtain.classList.toggle('courtain-hidden');
+        }
+        
+        
+    }
     return public;
 }
