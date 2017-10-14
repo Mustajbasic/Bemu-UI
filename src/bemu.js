@@ -6,6 +6,7 @@ function Bemu() {
     let sidenav = {};
     let public = {};
     let numberOfShownDropdowns = 0;
+    let body = document.getElementsByTagName('body')[0];
     let closeDropdown = function (id) {
         for (let i = 0; i < dropdownList.length; i++) {
             if (dropdownList[i].getId() == id) {
@@ -13,6 +14,29 @@ function Bemu() {
             }
         }
     };
+    public.http ={
+        get: function (url, callback) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    callback(this.responseText);
+                }
+            };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        },
+        post: function (url, data, callback) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    callback(this.responseText);
+                }
+            };
+            xhttp.open("POST", url, true);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send(JSON.stringify(data));
+        }
+    }
     public.addSideNavigation = function (id, courtain) {
         sidenav = BemuSideNavigation(id, courtain);
 
@@ -24,9 +48,10 @@ function Bemu() {
         dialogList.push(BemuDialog(id, courtain));
     };
     public.toggleDialog = function (id) {
-        console.log(id, dialogList);
+        
         for (let i = 0; i < dialogList.length; i++) {
             if (dialogList[i].getId() == id) {
+                body.classList.toggle('noscroll');
                 dialogList[i].toggle();
             }
         }

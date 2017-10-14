@@ -51,6 +51,10 @@ a:visited {
     display: none;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 .bottom-gap {
     margin-bottom: 10px;
 }
