@@ -21,13 +21,11 @@ function Bemu() {
     }
     public.addDialog= function (id,courtain) {
         dialogList.push(BemuDialog(id, courtain));
-        console.log(dialogList);
     }
     public.toggleDialog = function (id) {
         console.log(id);
         for(let i = 0 ; i < dialogList.length ; i++) {
             if(dialogList[i].getId() == id) {
-                console.log("Našao")
                 dialogList[i].toggle();
             }
         }

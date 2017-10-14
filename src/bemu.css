@@ -591,25 +591,20 @@ ul.list .list-item {
 }
 
 /* -- Dialog -- */
-
 .popup-dialog {
     position: fixed;
     width: 750px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
     z-index: 999;
     border-radius: 3px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .dialog-hidden {
-    left: -755px;
-}
-.narrow.dialog-hidden {
-    left: -455px;
-}
-.wide.dialog-hidden {
-    left: -1030px;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
 }
 .popup-dialog.narrow {
     width: 450px;
