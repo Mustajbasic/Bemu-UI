@@ -65,21 +65,54 @@
             </div>
         </div>
        <div class="row">
-           <div class="col full-large full-small full-medium">
-               <input type="button" class="button primary" onclick="globalBemu.toggleDialog('first-dialog')" value="Open Dialog">
-               <div class="sidenav-courtain" id="dialog-courtain"></div>
-               <div class="popup-dialog narrow" id="first-dialog">
-                   <div class="dialog-header cyan darker-1 white-text">
-                       <h3 class="dialog-title">Hello world dialog</h3>
-                       <a onclick="globalBemu.toggleDialog('first-dialog')" class="close-dialog"><i class="material-icons noselect">close</i></a>
+          <div class="col three-large full-small three-medium">
+               <input type="button" class="button success full-width" onclick="globalBemu.toggleDialog('demo-dialog')" value="Simple dialog">
+               <div class="popup-dialog dialog-hidden" id="demo-dialog">
+                   <div class="dialog-header lime-green darker-1 white-text">
+                       <h3 class="dialog-title">Just a simple dialog</h3>
+                       <a onclick="globalBemu.toggleDialog('demo-dialog')" class="close-dialog"><i class="material-icons noselect">close</i></a>
                    </div>
-                   <div class="dialog-content">
-                       Hello
+                   <div class="dialog-content justify">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                       Rerum ab vitae aliquid cupiditate, quam odio alias perspiciatis 
+                       blanditiis corporis ad reiciendis sapiente at molestias, ipsam nemo est. 
+                       Doloribus ullam, quidem.
                    </div>
                </div>
-               
-               
-               
+           </div>
+           <div class="col three-large full-small three-medium">
+               <input type="button" class="button primary full-width" onclick="globalBemu.toggleDialog('first-dialog')" value="Dialog with photo">
+               <div class="sidenav-courtain courtain-hidden hide" id="dialog-courtain"></div>
+               <div class="popup-dialog narrow dialog-hidden" id="first-dialog">
+                   <div class="dialog-header cyan darker-1 white-text">
+                       <h3 class="dialog-title">Dialog with a photo</h3>
+                       <a onclick="globalBemu.toggleDialog('first-dialog')" class="close-dialog"><i class="material-icons noselect">close</i></a>
+                   </div>
+                   <img src="images/dialog-image.jpg" class="dialog-photo" alt="I take pretty pictures, don't I?">
+                   <div class="dialog-content justify">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                       Rerum ab vitae aliquid cupiditate, quam odio alias perspiciatis 
+                       blanditiis corporis ad reiciendis sapiente at molestias, ipsam nemo est. 
+                       Doloribus ullam, quidem.
+                   </div>
+               </div>
+           </div>
+           <div class="col three-large full-small three-medium">
+               <input type="button" class="button warning full-width" onclick="globalBemu.toggleDialog('second-dialog')" value="Dialog with grid">
+               <div class="popup-dialog wide dialog-hidden" id="second-dialog">
+                   <div class="dialog-header amber darker-1 white-text">
+                       <h3 class="dialog-title">Dialog with the grid</h3>
+                       <a onclick="globalBemu.toggleDialog('second-dialog')" class="close-dialog"><i class="material-icons noselect">close</i></a>
+                   </div>
+                   <div class="dialog-content">
+                      <h3>A .row nested within .dialog-content</h3>
+                       <div class="row">
+                           <div class="col six-large six-medium full-small"><input type="button" class="button warning full-width" value="Column 1"></div>
+                           <div class="col six-large six-medium full-small"><input type="button" class="button warning full-width" value="Column 2"></div>
+                       </div>
+                       <p>Be carefull when using nested rows because thier breakpoints still relly on the width of the window. I recomend you use only the six-* and full-* columns. </p>
+                   </div>
+               </div>
            </div>
        </div>
         <div class="row">
