@@ -637,6 +637,10 @@ ul.list .list-item {
     padding: 20px;
     margin: 0;
     font-size: 18.72px;
+    width: calc(100% - 105px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .close-dialog {
