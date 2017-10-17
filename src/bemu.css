@@ -672,8 +672,3 @@ ul.list .list-item {
     width: calc(100% + 20px);
     margin: 0 -10px;
 }
-
-.dialog-photo {
-    width: 100%;
-    background-color: white;
-}
