@@ -598,7 +598,7 @@ ul.list .list-item {
 
 .popup-dialog {
     position: fixed;
-    width: 80%;
+    width: calc(100vw - 36px);
     max-width: 750px;
     top: 50%;
     left: 50%;
@@ -662,7 +662,7 @@ ul.list .list-item {
     padding: 20px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    max-height: 550px;
+    max-height: calc(100vh - 181px);
     overflow-y: auto;
     font-size: 16px;
     overflow-y: auto;
@@ -671,9 +671,4 @@ ul.list .list-item {
 .dialog-content > .row {
     width: calc(100% + 20px);
     margin: 0 -10px;
-}
-
-.dialog-photo {
-    width: 100%;
-    background-color: white;
 }
