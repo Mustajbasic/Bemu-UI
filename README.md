@@ -1,4 +1,4 @@
-# WARNING: All code on this repo is not up to todays standards
+# NOTE: This is just a playground project and should be taken with a grain of salt
 
 # Bemu-UI
 A small CSS and JS package with the essentials for responsive design
